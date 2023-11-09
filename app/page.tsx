@@ -3,7 +3,7 @@ import {Hero, SearchBar, CustomFilter, CarCard} from "@/components";
 import {fetchData} from "@/utils";
 import {fuels, yearsOfProduction} from "@/constants";
 
-export default  async function Home({searchParams}) {
+export default  async function Home({searchParams}: any) {
     const allCars = await fetchData({
         manufacturer : searchParams.manufacturer || '',
         year : searchParams.year || 2022,
@@ -14,7 +14,6 @@ export default  async function Home({searchParams}) {
 
     }) ;
     const isDataEmpty = !Array.isArray(allCars) || allCars.length <1 || !allCars
-    console.log(allCars)
     return (
         <main className="overflow-hidden">
             <Hero/>
