@@ -7,6 +7,7 @@ import CustomFilter from "@/components/CustomFilter";
 import SearchManufacturer from "@/components/SearchManufacturer";
 import CarCard from "@/components/CarCard";
 import CarDetails from "@/components/CarDetails";
+import ShowMore from "@/components/ShowMore";
 export  {
     Hero,
     CustomButton,
@@ -16,5 +17,6 @@ export  {
     CustomFilter,
     SearchManufacturer,
     CarCard,
-    CarDetails
+    CarDetails,
+    ShowMore
 }
