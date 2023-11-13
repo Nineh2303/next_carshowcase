@@ -6,7 +6,7 @@ import Image from "next/image";
 import {useRouter} from "next/navigation";
 import {updateSearchParams} from "@/utils";
 
-const CustomFilter = ({ title, options, setFilter }: CustomFilterProps) => {
+const CustomFilter = ({ title, options}: CustomFilterProps) => {
     const [selected, setSelected] = useState(options[0])
 
     return (
@@ -15,7 +15,6 @@ const CustomFilter = ({ title, options, setFilter }: CustomFilterProps) => {
                 value={selected}
                 onChange={(e) => {
                     setSelected(e)
-                    setFilter(e)
                 }}
             >
                 <div className="relative w-fit z-10">
